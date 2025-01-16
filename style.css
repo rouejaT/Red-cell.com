@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+.container{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_page, .service_box, .about_container, .contact{
+    background: white;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.nav{
+    width: 100%;
+    background-color: #222;
+    position: sticky;
+    
+}
+
+.bar{
+    background-color: #122;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 2px;
+}
+
+li, a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: 15px
+}
+
+ul{
+    
+    padding: 2px;
+}
+
+.logo a{
+    color: white;
+    font-size: 2rem;
+}
+
+.home_page{
+    background:linear-gradient(-5deg, rgba(0, 0, 0, 0.457), rgba(255, 0, 0, 0.357)), url(sekuriti.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+.descript{
+    
+    padding: 10px;
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.descript h2{
+    font-size: 38px;
+    color: whitesmoke;
+    font-size: 50px;
+    text-shadow: 0 2px 4px black;
+}
+
+.descript p{
+    font-size: 20px;
+}
+
+.service_box{
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.24), rgba(255, 0, 0, 0.24)), url(security.jpg);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+.box{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 90%;
+    height: 900px;
+}
+
+.card{
+    
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 5px;
+    transition: .5s cubic-bezier(0.12, 0.57, 0.63,0.21);
+    cursor: pointer;
+    border-radius: 10vh;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card[for="c1"]{
+    background: url(comm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card[for="c2"]{
+    background: url(new.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card[for="c6"]{
+    background: url(physical.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: center;
+    background-repeat: no-repeat;
+}
+
+.card[for="c5"]{
+    background: url(commserv.jpg);
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.card[for="c4"]{
+    background: url(k9.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+
+.card[for="c1"]{
+    background: url(comm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card[for="c3"]{
+    background: url(networksecurity.jpg);
+    background-size: cover;
+    background-position: center;
+    color: tan;
+}
+
+.card>.all{
+    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.all>.number{
+    padding: 1em;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.card>.all>.serv{
+   
+    padding: 10px;
+    overflow: hiden;
+    height: 350px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    flex-wrap: nowrap;
+}
+
+input{
+    display: none;
+}
+
+input:checked+label{
+    width: 1500px;
+}
+
+input:check+label{
+    width: 80px;
+}
+
+input:checked+label .serv{
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+.card>.all>.serv h3{
+    
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.about_container{
+
+    background: url(sekuriti.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info{
+    
+    padding: 10px;
+    height: 300px;
+    width: 60%;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pic{
+    background: url(okay.jpg);
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+.contact{
+    background: url(ipphone.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.more{
+            
+    padding: 10px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.main{
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.call{
+            
+    display: flex;
+    padding: 10px;
+}
+
+.gmail{
+    
+    display: flex;
+    padding: 10px;
+}
+
+.all{
+    border-right: 2px solid;
+    padding-right: 5px;
+}
+
+.mail{
+    border-right: 2px solid;
+    padding-right: 5px;
+}
+
+.main>h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
